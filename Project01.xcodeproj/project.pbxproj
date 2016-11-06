@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E17DB0E1DCE6C1A002C906E /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */; };
+		8E17DB101DCE6C27002C906E /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */; };
+		8E17DB121DCE866C002C906E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB111DCE866C002C906E /* Word.swift */; };
+		8E17DB141DCE87C3002C906E /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB131DCE87C3002C906E /* WordCell.swift */; };
+		8E17DB161DCE8842002C906E /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB151DCE8842002C906E /* WordManager.swift */; };
+		8ED988891DCEEECC00EFCAA4 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */; };
+		8ED9888B1DCF006A00EFCAA4 /* KanjiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */; };
+		8ED9888D1DCF00C700EFCAA4 /* KanjiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */; };
 		8EE073A81DCE3121006F5A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE073A71DCE3121006F5A3C /* AppDelegate.swift */; };
-		8EE073AA1DCE3121006F5A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE073A91DCE3121006F5A3C /* ViewController.swift */; };
 		8EE073AD1DCE3121006F5A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE073AB1DCE3121006F5A3C /* Main.storyboard */; };
 		8EE073AF1DCE3121006F5A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE073AE1DCE3121006F5A3C /* Assets.xcassets */; };
 		8EE073B21DCE3121006F5A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE073B01DCE3121006F5A3C /* LaunchScreen.storyboard */; };
@@ -34,9 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
+		8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
+		8E17DB111DCE866C002C906E /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		8E17DB131DCE87C3002C906E /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		8E17DB151DCE8842002C906E /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiCharacter.swift; sourceTree = "<group>"; };
+		8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiHelper.swift; sourceTree = "<group>"; };
 		8EE073A41DCE3121006F5A3C /* Project01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE073A71DCE3121006F5A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EE073A91DCE3121006F5A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8EE073AC1DCE3121006F5A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EE073AE1DCE3121006F5A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EE073B11DCE3121006F5A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,8 +112,15 @@
 			isa = PBXGroup;
 			children = (
 				8EE073A71DCE3121006F5A3C /* AppDelegate.swift */,
-				8EE073A91DCE3121006F5A3C /* ViewController.swift */,
+				8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */,
+				8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */,
+				8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */,
+				8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */,
+				8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */,
+				8E17DB111DCE866C002C906E /* Word.swift */,
+				8E17DB151DCE8842002C906E /* WordManager.swift */,
 				8EE073AB1DCE3121006F5A3C /* Main.storyboard */,
+				8E17DB131DCE87C3002C906E /* WordCell.swift */,
 				8EE073AE1DCE3121006F5A3C /* Assets.xcassets */,
 				8EE073B01DCE3121006F5A3C /* LaunchScreen.storyboard */,
 				8EE073B31DCE3121006F5A3C /* Info.plist */,
@@ -259,8 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE073AA1DCE3121006F5A3C /* ViewController.swift in Sources */,
+				8E17DB121DCE866C002C906E /* Word.swift in Sources */,
+				8ED9888B1DCF006A00EFCAA4 /* KanjiCharacter.swift in Sources */,
+				8E17DB0E1DCE6C1A002C906E /* AnimationsViewController.swift in Sources */,
+				8ED9888D1DCF00C700EFCAA4 /* KanjiHelper.swift in Sources */,
+				8E17DB141DCE87C3002C906E /* WordCell.swift in Sources */,
+				8ED988891DCEEECC00EFCAA4 /* DrawingViewController.swift in Sources */,
 				8EE073A81DCE3121006F5A3C /* AppDelegate.swift in Sources */,
+				8E17DB161DCE8842002C906E /* WordManager.swift in Sources */,
+				8E17DB101DCE6C27002C906E /* WordTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -369,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -505,6 +535,7 @@
 				8EE073CE1DCE3121006F5A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +544,7 @@
 				8EE073D11DCE3121006F5A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +553,7 @@
 				8EE073D41DCE3121006F5A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

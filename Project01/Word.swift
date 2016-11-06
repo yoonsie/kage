@@ -8,17 +8,19 @@
 
 import UIKit
 
-class Noun: NSObject {
+class Word: NSObject {
     
 //    Properties
-    var japaneseWord: String //this will be hardcoded b/c the point of the app is to learn this language
-    var nativeWord: String //this will be localized and will be translated in the user's native language
+    var japanese: String //this will be hardcoded b/c the point of the app is to learn this language
+    var native: String //this will be localized and will be translated in the user's native language
+    var imageFile: String
     
     
 //    Designated onstructor
-    init ( _ japaneseWord: String, _ nativeWord: String) {
-        self.japaneseWord = japaneseWord
-        self.nativeWord = nativeWord
+    init ( _ japanese: String, _ native: String, _ imageFile: String) {
+        self.japanese = japanese
+        self.native = native
+        self.imageFile = imageFile
     }
     
 
