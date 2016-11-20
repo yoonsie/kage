@@ -12,20 +12,20 @@ class WordManager: NSObject {
     
     //initialize empty array of words
     var words: [Word] =
-        [Word("犬", "dog", "dog.png"),
-         Word("猫", "cat", "cat.png"),
-         Word("家", "house", "house.png"),
-         Word("人", "person", "person.png"),
-         Word("一", "one", "one.png"),
-         Word("二", "two", "two.png"),
-         Word("三", "three", "three.png"),
-         Word("四", "four", "four.png"),
-         Word("五", "five", "five.png"),
-         Word("六", "six", "six.png"),
-         Word("七", "seven", "seven.png"),
-         Word("八", "eight", "eight.png"),
-         Word("九", "nine", "nine.png"),
-         Word("十", "ten", "ten.png")]
+        [Word("犬", NSLocalizedString("dog", comment: "dog"), "dog.png"),
+         Word("猫", NSLocalizedString("cat", comment: "cat"), "cat.png"),
+         Word("家", NSLocalizedString("house", comment: "house"), "house.png"),
+         Word("人", NSLocalizedString("person", comment: "person"), "person.png"),
+         Word("一", NSLocalizedString("one", comment: "one"), "one.png"),
+         Word("二", NSLocalizedString("two", comment: "two"), "two.png"),
+         Word("三", NSLocalizedString("three", comment: "three"), "three.png"),
+         Word("四", NSLocalizedString("four", comment: "four"), "four.png"),
+         Word("五", NSLocalizedString("five", comment: "five"), "five.png"),
+         Word("六", NSLocalizedString("six", comment: "six"), "six.png"),
+         Word("七", NSLocalizedString("seven", comment: "seven"), "seven.png"),
+         Word("八", NSLocalizedString("eight", comment: "eight"), "eight.png"),
+         Word("九", NSLocalizedString("nine", comment: "nine"), "nine.png"),
+         Word("十", NSLocalizedString("ten", comment: "ten"), "ten.png")]
     
 
     

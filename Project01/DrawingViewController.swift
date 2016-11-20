@@ -16,23 +16,27 @@ class DrawingViewController: UIViewController {
     @IBOutlet var drawingBoard: UIImageView! //the drawing board
     @IBOutlet var actualNumberOfStrokes: UILabel! //label for the actual number of strokes for the kanji character
     @IBOutlet var yourNumberOfStrokes: UILabel!//label indicating how many strokes you have drawn so far
+   
     
+    //last point is starting at 0
     var lastPoint = CGPoint.zero
-    var swiped = false
+    var swiped = false//initial swipe status is false
     
+    //user's number of strokes starts at 0
     var numberOfStrokes: Int = 0
+    
+    //model
     let model = KanjiHelper()
     
-    
+    //viewDidLoad function
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let model = KanjiHelper()
+        
+        //set up initial kanji to be shown by getting next kanji from model
         var kanji: [String] = model.getNextKanji()
-        
         kanjiLabel.text = kanji[0]//value at first part of array is the kanji character
-        actualNumberOfStrokes.text = "# of strokes: " + kanji[1]
-        
+        actualNumberOfStrokes.text = NSLocalizedString("# of strokes: ", comment: "# of strokes: ") + kanji[1]
         
  
     }
@@ -102,7 +106,7 @@ class DrawingViewController: UIViewController {
         numberOfStrokes += 1
         print (numberOfStrokes)
         
-        yourNumberOfStrokes.text = "Your # of strokes: " + String(numberOfStrokes)
+        yourNumberOfStrokes.text = NSLocalizedString("Your # of strokes: ", comment:"Your # of strokes: ") + String(numberOfStrokes)
     }
     
     
@@ -116,7 +120,7 @@ class DrawingViewController: UIViewController {
         numberOfStrokes = 0
         
         //update label user's number of strokes
-        yourNumberOfStrokes.text = "Your # of strokes: 0"
+        yourNumberOfStrokes.text = NSLocalizedString("Your # of strokes: 0", comment: "Your # of strokes: 0")
         
     }
     
@@ -126,7 +130,7 @@ class DrawingViewController: UIViewController {
         //reset number of user's strokes counter
         numberOfStrokes = 0
         //reset your number of user's strokes for label too
-        yourNumberOfStrokes.text = "Your # of strokes: 0"
+        yourNumberOfStrokes.text = NSLocalizedString("Your # of strokes: 0", comment: "Your # of strokes: 0")
 
         
         if (model.kanjiArray.isEmpty) {
@@ -140,7 +144,7 @@ class DrawingViewController: UIViewController {
             kanjiLabel.text = kanji[0]
             
             //update the actual number of strokes for new kanji
-            actualNumberOfStrokes.text = "# of strokes: " + kanji[1]
+            actualNumberOfStrokes.text = NSLocalizedString("# of strokes: ", comment: "# of strokes: ") + kanji[1]
         }
         
         

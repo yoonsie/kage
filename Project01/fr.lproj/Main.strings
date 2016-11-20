@@ -1,15 +1,45 @@
 
-/* Class = "UITabBarItem"; title = "app"; ObjectID = "45e-rQ-xrX"; */
-"45e-rQ-xrX.title" = "app";
+/* Class = "UIButton"; normalTitle = "x"; ObjectID = "2NS-HI-dRn"; */
+"2NS-HI-dRn.normalTitle" = "x";
 
 /* Class = "UITabBarItem"; title = "animations"; ObjectID = "Pe4-ae-bE4"; */
 "Pe4-ae-bE4.title" = "animations";
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "SAM-Xk-MkN"; */
+"SAM-Xk-MkN.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TUJ-xO-n4N"; */
+"TUJ-xO-n4N.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "app"; ObjectID = "TnV-P6-4L9"; */
+"TnV-P6-4L9.title" = "app";
+
+/* Class = "UILabel"; text = "Your # of strokes:  00"; ObjectID = "UKC-yt-G50"; */
+"UKC-yt-G50.text" = "Votre # de coups:  00";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "aWz-AA-aGX"; */
 "aWz-AA-aGX.text" = "Label";
 
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "b0F-4Z-EhI"; */
+"b0F-4Z-EhI.normalTitle" = "Prochain";
+
+/* Class = "UIButton"; normalTitle = "+Edit"; ObjectID = "bla-eu-rEd"; */
+"bla-eu-rEd.normalTitle" = "+Modifiez";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "dwr-yc-LKE"; */
 "dwr-yc-LKE.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "type here"; ObjectID = "mT6-CE-1R9"; */
+"mT6-CE-1R9.placeholder" = "écrivez ici";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "n7s-MS-l24"; */
+"n7s-MS-l24.text" = "Label";
+
+/* Class = "UILabel"; text = "# of strokes: 00 "; ObjectID = "sgI-qM-qlm"; */
+"sgI-qM-qlm.text" = "# de coups: 00 ";
+
+/* Class = "UIButton"; normalTitle = "animate!"; ObjectID = "tRX-e3-hOf"; */
+"tRX-e3-hOf.normalTitle" = "animent!";
 
 /* Class = "UITabBarItem"; title = "table"; ObjectID = "zeH-Mo-6we"; */
 "zeH-Mo-6we.title" = "table";

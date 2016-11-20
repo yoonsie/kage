@@ -12,6 +12,7 @@
 		8E17DB121DCE866C002C906E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB111DCE866C002C906E /* Word.swift */; };
 		8E17DB141DCE87C3002C906E /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB131DCE87C3002C906E /* WordCell.swift */; };
 		8E17DB161DCE8842002C906E /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB151DCE8842002C906E /* WordManager.swift */; };
+		8E67C5F91DCFD8F300672C7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E67C5FB1DCFD8F300672C7A /* Localizable.strings */; };
 		8ED988891DCEEECC00EFCAA4 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */; };
 		8ED9888B1DCF006A00EFCAA4 /* KanjiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */; };
 		8ED9888D1DCF00C700EFCAA4 /* KanjiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */; };
@@ -46,6 +47,11 @@
 		8E17DB111DCE866C002C906E /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		8E17DB131DCE87C3002C906E /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		8E17DB151DCE8842002C906E /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		8E67C5F51DCFD4CA00672C7A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		8E67C5F61DCFD4CA00672C7A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8E67C5FA1DCFD8F300672C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8E67C5FC1DCFD8F400672C7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8E67C5FD1DCFD8F500672C7A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiCharacter.swift; sourceTree = "<group>"; };
 		8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiHelper.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 		8EE0739B1DCE3121006F5A3C = {
 			isa = PBXGroup;
 			children = (
+				8E67C5FB1DCFD8F300672C7A /* Localizable.strings */,
 				8EE073A61DCE3121006F5A3C /* Project01 */,
 				8EE073BB1DCE3121006F5A3C /* Project01Tests */,
 				8EE073C61DCE3121006F5A3C /* Project01UITests */,
@@ -111,14 +118,14 @@
 		8EE073A61DCE3121006F5A3C /* Project01 */ = {
 			isa = PBXGroup;
 			children = (
-				8EE073A71DCE3121006F5A3C /* AppDelegate.swift */,
-				8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */,
-				8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */,
-				8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */,
 				8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */,
-				8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */,
 				8E17DB111DCE866C002C906E /* Word.swift */,
 				8E17DB151DCE8842002C906E /* WordManager.swift */,
+				8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */,
+				8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */,
+				8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */,
+				8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */,
+				8EE073A71DCE3121006F5A3C /* AppDelegate.swift */,
 				8EE073AB1DCE3121006F5A3C /* Main.storyboard */,
 				8E17DB131DCE87C3002C906E /* WordCell.swift */,
 				8EE073AE1DCE3121006F5A3C /* Assets.xcassets */,
@@ -235,6 +242,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 8EE0739B1DCE3121006F5A3C;
 			productRefGroup = 8EE073A51DCE3121006F5A3C /* Products */;
@@ -254,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE073B21DCE3121006F5A3C /* LaunchScreen.storyboard in Resources */,
+				8E67C5F91DCFD8F300672C7A /* Localizable.strings in Resources */,
 				8EE073AF1DCE3121006F5A3C /* Assets.xcassets in Resources */,
 				8EE073AD1DCE3121006F5A3C /* Main.storyboard in Resources */,
 			);
@@ -324,10 +333,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8E67C5FB1DCFD8F300672C7A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E67C5FA1DCFD8F300672C7A /* Base */,
+				8E67C5FC1DCFD8F400672C7A /* en */,
+				8E67C5FD1DCFD8F500672C7A /* fr */,
+			);
+			name = Localizable.strings;
+			path = Project01;
+			sourceTree = "<group>";
+		};
 		8EE073AB1DCE3121006F5A3C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8EE073AC1DCE3121006F5A3C /* Base */,
+				8E67C5F51DCFD4CA00672C7A /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -336,6 +357,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8EE073B11DCE3121006F5A3C /* Base */,
+				8E67C5F61DCFD4CA00672C7A /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
