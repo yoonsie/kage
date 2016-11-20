@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
-               BuildableName = "Project01.app"
-               BlueprintName = "Project01"
-               ReferencedContainer = "container:Project01.xcodeproj">
+               BuildableName = "kage.app"
+               BlueprintName = "kage"
+               ReferencedContainer = "container:kage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EE073B71DCE3121006F5A3C"
-               BuildableName = "Project01Tests.xctest"
-               BlueprintName = "Project01Tests"
-               ReferencedContainer = "container:Project01.xcodeproj">
+               BuildableName = "kageTests.xctest"
+               BlueprintName = "kageTests"
+               ReferencedContainer = "container:kage.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EE073C21DCE3121006F5A3C"
-               BuildableName = "Project01UITests.xctest"
-               BlueprintName = "Project01UITests"
-               ReferencedContainer = "container:Project01.xcodeproj">
+               BuildableName = "kageUITests.xctest"
+               BlueprintName = "kageUITests"
+               ReferencedContainer = "container:kage.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
-            BuildableName = "Project01.app"
-            BlueprintName = "Project01"
-            ReferencedContainer = "container:Project01.xcodeproj">
+            BuildableName = "kage.app"
+            BlueprintName = "kage"
+            ReferencedContainer = "container:kage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
-            BuildableName = "Project01.app"
-            BlueprintName = "Project01"
-            ReferencedContainer = "container:Project01.xcodeproj">
+            BuildableName = "kage.app"
+            BlueprintName = "kage"
+            ReferencedContainer = "container:kage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
-            BuildableName = "Project01.app"
-            BlueprintName = "Project01"
-            ReferencedContainer = "container:Project01.xcodeproj">
+            BuildableName = "kage.app"
+            BlueprintName = "kage"
+            ReferencedContainer = "container:kage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

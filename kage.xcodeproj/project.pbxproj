@@ -55,16 +55,16 @@
 		8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiCharacter.swift; sourceTree = "<group>"; };
 		8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiHelper.swift; sourceTree = "<group>"; };
-		8EE073A41DCE3121006F5A3C /* Project01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE073A41DCE3121006F5A3C /* kage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE073A71DCE3121006F5A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE073AC1DCE3121006F5A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EE073AE1DCE3121006F5A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EE073B11DCE3121006F5A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EE073B31DCE3121006F5A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EE073B81DCE3121006F5A3C /* Project01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE073B81DCE3121006F5A3C /* kageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE073BC1DCE3121006F5A3C /* Project01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project01Tests.swift; sourceTree = "<group>"; };
 		8EE073BE1DCE3121006F5A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EE073C31DCE3121006F5A3C /* Project01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE073C31DCE3121006F5A3C /* kageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE073C71DCE3121006F5A3C /* Project01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project01UITests.swift; sourceTree = "<group>"; };
 		8EE073C91DCE3121006F5A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,9 +108,9 @@
 		8EE073A51DCE3121006F5A3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EE073A41DCE3121006F5A3C /* Project01.app */,
-				8EE073B81DCE3121006F5A3C /* Project01Tests.xctest */,
-				8EE073C31DCE3121006F5A3C /* Project01UITests.xctest */,
+				8EE073A41DCE3121006F5A3C /* kage.app */,
+				8EE073B81DCE3121006F5A3C /* kageTests.xctest */,
+				8EE073C31DCE3121006F5A3C /* kageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EE073A31DCE3121006F5A3C /* Project01 */ = {
+		8EE073A31DCE3121006F5A3C /* kage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EE073CC1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01" */;
+			buildConfigurationList = 8EE073CC1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kage" */;
 			buildPhases = (
 				8EE073A01DCE3121006F5A3C /* Sources */,
 				8EE073A11DCE3121006F5A3C /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = Project01;
+			name = kage;
 			productName = Project01;
-			productReference = 8EE073A41DCE3121006F5A3C /* Project01.app */;
+			productReference = 8EE073A41DCE3121006F5A3C /* kage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8EE073B71DCE3121006F5A3C /* Project01Tests */ = {
+		8EE073B71DCE3121006F5A3C /* kageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01Tests" */;
+			buildConfigurationList = 8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageTests" */;
 			buildPhases = (
 				8EE073B41DCE3121006F5A3C /* Sources */,
 				8EE073B51DCE3121006F5A3C /* Frameworks */,
@@ -186,14 +186,14 @@
 			dependencies = (
 				8EE073BA1DCE3121006F5A3C /* PBXTargetDependency */,
 			);
-			name = Project01Tests;
+			name = kageTests;
 			productName = Project01Tests;
-			productReference = 8EE073B81DCE3121006F5A3C /* Project01Tests.xctest */;
+			productReference = 8EE073B81DCE3121006F5A3C /* kageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8EE073C21DCE3121006F5A3C /* Project01UITests */ = {
+		8EE073C21DCE3121006F5A3C /* kageUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01UITests" */;
+			buildConfigurationList = 8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageUITests" */;
 			buildPhases = (
 				8EE073BF1DCE3121006F5A3C /* Sources */,
 				8EE073C01DCE3121006F5A3C /* Frameworks */,
@@ -204,9 +204,9 @@
 			dependencies = (
 				8EE073C51DCE3121006F5A3C /* PBXTargetDependency */,
 			);
-			name = Project01UITests;
+			name = kageUITests;
 			productName = Project01UITests;
-			productReference = 8EE073C31DCE3121006F5A3C /* Project01UITests.xctest */;
+			productReference = 8EE073C31DCE3121006F5A3C /* kageUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8EE0739F1DCE3121006F5A3C /* Build configuration list for PBXProject "Project01" */;
+			buildConfigurationList = 8EE0739F1DCE3121006F5A3C /* Build configuration list for PBXProject "kage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -249,9 +249,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EE073A31DCE3121006F5A3C /* Project01 */,
-				8EE073B71DCE3121006F5A3C /* Project01Tests */,
-				8EE073C21DCE3121006F5A3C /* Project01UITests */,
+				8EE073A31DCE3121006F5A3C /* kage */,
+				8EE073B71DCE3121006F5A3C /* kageTests */,
+				8EE073C21DCE3121006F5A3C /* kageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,12 +322,12 @@
 /* Begin PBXTargetDependency section */
 		8EE073BA1DCE3121006F5A3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8EE073A31DCE3121006F5A3C /* Project01 */;
+			target = 8EE073A31DCE3121006F5A3C /* kage */;
 			targetProxy = 8EE073B91DCE3121006F5A3C /* PBXContainerItemProxy */;
 		};
 		8EE073C51DCE3121006F5A3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8EE073A31DCE3121006F5A3C /* Project01 */;
+			target = 8EE073A31DCE3121006F5A3C /* kage */;
 			targetProxy = 8EE073C41DCE3121006F5A3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -494,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project01.app/Project01";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kage.app/kage";
 			};
 			name = Debug;
 		};
@@ -508,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project01.app/Project01";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kage.app/kage";
 			};
 			name = Release;
 		};
@@ -541,7 +541,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8EE0739F1DCE3121006F5A3C /* Build configuration list for PBXProject "Project01" */ = {
+		8EE0739F1DCE3121006F5A3C /* Build configuration list for PBXProject "kage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EE073CA1DCE3121006F5A3C /* Debug */,
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EE073CC1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01" */ = {
+		8EE073CC1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EE073CD1DCE3121006F5A3C /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01Tests" */ = {
+		8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EE073D01DCE3121006F5A3C /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "Project01UITests" */ = {
+		8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EE073D31DCE3121006F5A3C /* Debug */,
