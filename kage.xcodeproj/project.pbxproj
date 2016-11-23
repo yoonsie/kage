@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E8EB81A1DE5342700F3FE42 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EB8191DE5342700F3FE42 /* PhotoController.swift */; };
 		8E92B00A1DE1374B00A610EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0091DE1374B00A610EC /* AppDelegate.swift */; };
 		8E92B00C1DE1374B00A610EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B00B1DE1374B00A610EC /* ViewController.swift */; };
 		8E92B00F1DE1374B00A610EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E92B00D1DE1374B00A610EC /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E8EB8191DE5342700F3FE42 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		8E92B0061DE1374B00A610EC /* kage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E92B0091DE1374B00A610EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E92B00B1DE1374B00A610EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				8E92B0091DE1374B00A610EC /* AppDelegate.swift */,
 				8E92B00B1DE1374B00A610EC /* ViewController.swift */,
 				8E92B0371DE13D4300A610EC /* DrawingController.swift */,
+				8E8EB8191DE5342700F3FE42 /* PhotoController.swift */,
 				8E92B03B1DE1427C00A610EC /* KanjiCharacter.swift */,
 				8E92B0391DE1425200A610EC /* KanjiHelper.swift */,
 				8E92B00D1DE1374B00A610EC /* Main.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8EB81A1DE5342700F3FE42 /* PhotoController.swift in Sources */,
 				8E92B0381DE13D4300A610EC /* DrawingController.swift in Sources */,
 				8E92B03A1DE1425200A610EC /* KanjiHelper.swift in Sources */,
 				8E92B03C1DE1427C00A610EC /* KanjiCharacter.swift in Sources */,
@@ -517,6 +521,7 @@
 				8E92B0301DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E92B0311DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kageTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				8E92B0331DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E92B0341DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kageUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +539,7 @@
 				8E92B0361DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
