@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
+               BlueprintIdentifier = "8E92B0051DE1374B00A610EC"
                BuildableName = "kage.app"
                BlueprintName = "kage"
                ReferencedContainer = "container:kage.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8EE073B71DCE3121006F5A3C"
+               BlueprintIdentifier = "8E92B0191DE1374B00A610EC"
                BuildableName = "kageTests.xctest"
                BlueprintName = "kageTests"
                ReferencedContainer = "container:kage.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8EE073C21DCE3121006F5A3C"
+               BlueprintIdentifier = "8E92B0241DE1374B00A610EC"
                BuildableName = "kageUITests.xctest"
                BlueprintName = "kageUITests"
                ReferencedContainer = "container:kage.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
+            BlueprintIdentifier = "8E92B0051DE1374B00A610EC"
             BuildableName = "kage.app"
             BlueprintName = "kage"
             ReferencedContainer = "container:kage.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
+            BlueprintIdentifier = "8E92B0051DE1374B00A610EC"
             BuildableName = "kage.app"
             BlueprintName = "kage"
             ReferencedContainer = "container:kage.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8EE073A31DCE3121006F5A3C"
+            BlueprintIdentifier = "8E92B0051DE1374B00A610EC"
             BuildableName = "kage.app"
             BlueprintName = "kage"
             ReferencedContainer = "container:kage.xcodeproj">
