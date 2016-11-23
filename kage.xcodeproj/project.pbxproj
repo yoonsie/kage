@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E4242261DE61CC400BC0CEF /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4242251DE61CC400BC0CEF /* WordCell.swift */; };
+		8E4242281DE61D0500BC0CEF /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4242271DE61D0500BC0CEF /* Word.swift */; };
+		8E42422A1DE61D1500BC0CEF /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4242291DE61D1500BC0CEF /* WordManager.swift */; };
+		8E42422C1DE61D2A00BC0CEF /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42422B1DE61D2A00BC0CEF /* WordTableViewController.swift */; };
+		8E42422E1DE62E1F00BC0CEF /* Notecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42422D1DE62E1F00BC0CEF /* Notecard.swift */; };
+		8E4242301DE6312900BC0CEF /* NotecardPersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42422F1DE6312900BC0CEF /* NotecardPersister.swift */; };
+		8E4242321DE635CA00BC0CEF /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4242311DE635CA00BC0CEF /* ImageHelper.swift */; };
 		8E8EB81A1DE5342700F3FE42 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EB8191DE5342700F3FE42 /* PhotoController.swift */; };
 		8E92B00A1DE1374B00A610EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0091DE1374B00A610EC /* AppDelegate.swift */; };
 		8E92B00C1DE1374B00A610EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B00B1DE1374B00A610EC /* ViewController.swift */; };
@@ -38,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E4242251DE61CC400BC0CEF /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		8E4242271DE61D0500BC0CEF /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		8E4242291DE61D1500BC0CEF /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		8E42422B1DE61D2A00BC0CEF /* WordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
+		8E42422D1DE62E1F00BC0CEF /* Notecard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notecard.swift; sourceTree = "<group>"; };
+		8E42422F1DE6312900BC0CEF /* NotecardPersister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotecardPersister.swift; sourceTree = "<group>"; };
+		8E4242311DE635CA00BC0CEF /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		8E8EB8191DE5342700F3FE42 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		8E92B0061DE1374B00A610EC /* kage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E92B0091DE1374B00A610EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,12 +123,19 @@
 				8E92B00B1DE1374B00A610EC /* ViewController.swift */,
 				8E92B0371DE13D4300A610EC /* DrawingController.swift */,
 				8E8EB8191DE5342700F3FE42 /* PhotoController.swift */,
+				8E4242311DE635CA00BC0CEF /* ImageHelper.swift */,
+				8E42422D1DE62E1F00BC0CEF /* Notecard.swift */,
+				8E42422F1DE6312900BC0CEF /* NotecardPersister.swift */,
 				8E92B03B1DE1427C00A610EC /* KanjiCharacter.swift */,
 				8E92B0391DE1425200A610EC /* KanjiHelper.swift */,
 				8E92B00D1DE1374B00A610EC /* Main.storyboard */,
 				8E92B0101DE1374B00A610EC /* Assets.xcassets */,
 				8E92B0121DE1374B00A610EC /* LaunchScreen.storyboard */,
 				8E92B0151DE1374B00A610EC /* Info.plist */,
+				8E4242251DE61CC400BC0CEF /* WordCell.swift */,
+				8E4242271DE61D0500BC0CEF /* Word.swift */,
+				8E4242291DE61D1500BC0CEF /* WordManager.swift */,
+				8E42422B1DE61D2A00BC0CEF /* WordTableViewController.swift */,
 			);
 			path = kage;
 			sourceTree = "<group>";
@@ -200,7 +221,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yoonsie Kim";
 				TargetAttributes = {
 					8E92B0051DE1374B00A610EC = {
@@ -272,7 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8EB81A1DE5342700F3FE42 /* PhotoController.swift in Sources */,
+				8E4242281DE61D0500BC0CEF /* Word.swift in Sources */,
 				8E92B0381DE13D4300A610EC /* DrawingController.swift in Sources */,
+				8E42422A1DE61D1500BC0CEF /* WordManager.swift in Sources */,
+				8E42422E1DE62E1F00BC0CEF /* Notecard.swift in Sources */,
+				8E4242261DE61CC400BC0CEF /* WordCell.swift in Sources */,
+				8E42422C1DE61D2A00BC0CEF /* WordTableViewController.swift in Sources */,
+				8E4242301DE6312900BC0CEF /* NotecardPersister.swift in Sources */,
+				8E4242321DE635CA00BC0CEF /* ImageHelper.swift in Sources */,
 				8E92B03A1DE1425200A610EC /* KanjiHelper.swift in Sources */,
 				8E92B03C1DE1427C00A610EC /* KanjiCharacter.swift in Sources */,
 				8E92B00C1DE1374B00A610EC /* ViewController.swift in Sources */,
@@ -349,6 +377,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -399,6 +428,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
