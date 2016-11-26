@@ -11,9 +11,9 @@ import UIKit
 class Word: NSObject {
     
     //    Properties
-    var japanese: String //this will be hardcoded b/c the point of the app is to learn this language
-    var native: String //this will be localized and will be translated in the user's native language
-    var imageFile: String
+    var japanese: String = "" //this will be hardcoded b/c the point of the app is to learn this language
+    var native: String = "" //this will be localized and will be translated in the user's native language
+    var imageFile: String = ""
     
     
     //    Designated onstructor
@@ -22,6 +22,5 @@ class Word: NSObject {
         self.native = native
         self.imageFile = imageFile
     }
-    
     
 }//end class

@@ -50,7 +50,7 @@
                                             <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="LoF-cv-esu" kind="show" animates="NO" id="zPV-Ax-eKH"/>
+                                            <segue destination="LoF-cv-esu" kind="show" id="x7u-iA-4LV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMC-3l-fMV">
@@ -62,9 +62,6 @@
                                         <state key="normal" title="2">
                                             <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="LoF-cv-esu" kind="show" id="LG4-pu-Vds"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-9Y-4CY">
                                         <rect key="frame" x="0.0" y="505" width="343" height="30"/>
@@ -75,9 +72,6 @@
                                         <state key="normal" title="3">
                                             <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="LoF-cv-esu" kind="show" id="Upf-lv-47l"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Study" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAT-Pc-X6T">
                                         <rect key="frame" x="0.0" y="535" width="343" height="22"/>
@@ -132,19 +126,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="U92-DW-JNd" secondAttribute="trailing" id="LxJ-Wj-RCB"/>
                             <constraint firstItem="U92-DW-JNd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wrT-Gf-1ZM"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="NEw-t8-wMa" appends="YES" id="mji-aC-N11"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="kage" id="Qc7-cv-lC8"/>
                     <navigationItem key="navigationItem" id="Ft8-lZ-0N9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="down" id="NEw-t8-wMa">
-                    <connections>
-                        <segue destination="kUX-Sa-Kss" kind="show" animates="NO" id="D3C-4a-cnG"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
@@ -176,7 +162,7 @@
                                         <rect key="frame" x="0.0" y="20.5" width="343" height="30"/>
                                         <state key="normal" title="Next"/>
                                         <connections>
-                                            <action selector="nextKanji:" destination="LoF-cv-esu" eventType="touchUpInside" id="Bh8-p2-36u"/>
+                                            <action selector="nextKanji:" destination="LoF-cv-esu" eventType="touchUpInside" id="EqA-9K-Ht9"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ot-uC-x7D">
@@ -223,23 +209,16 @@
                             <constraint firstItem="aDF-Sh-a5b" firstAttribute="leading" secondItem="Wrd-hq-qD0" secondAttribute="leadingMargin" id="jCl-w7-jYO"/>
                             <constraint firstItem="HBb-SF-f8B" firstAttribute="leading" secondItem="Wrd-hq-qD0" secondAttribute="leadingMargin" id="xuL-sc-LED"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="5Pd-yT-2Me" appends="YES" id="9Ze-FC-gyQ"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="canvas" destination="HBb-SF-f8B" id="flK-eX-Srk"/>
                         <outlet property="kanjiLabel" destination="4Ot-uC-x7D" id="UYl-KA-kRA"/>
                         <outlet property="kanjiStrokesLabel" destination="FX8-xg-Y4n" id="W8M-d1-U41"/>
+                        <outlet property="timer" destination="6R4-q1-J3b" id="YBZ-OG-fm5"/>
                         <outlet property="yourStrokesLabel" destination="3q6-2h-CIW" id="trR-PD-5aM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ax8-Kv-XD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="5Pd-yT-2Me">
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="312-iv-9Rc"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2210" y="-54"/>
         </scene>
@@ -277,7 +256,7 @@
                                 <rect key="frame" x="16" y="20" width="343" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="214" verticalHuggingPriority="233" horizontalCompressionResistancePriority="745" verticalCompressionResistancePriority="740" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="arD-4K-u7G">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="464.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="550"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OLP-Yp-20D">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
@@ -291,7 +270,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdF-Gv-x5i">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a word to study e.g. dog" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdF-Gv-x5i">
                                                         <rect key="frame" x="77" y="0.0" width="266" height="32"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -323,7 +302,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="QTN-Bc-1wO">
-                                                <rect key="frame" x="0.0" y="74" width="343" height="390.5"/>
+                                                <rect key="frame" x="0.0" y="74" width="343" height="476"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -332,7 +311,7 @@
                                         </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="247" verticalHuggingPriority="247" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" image="puppy" translatesAutoresizingMaskIntoConstraints="NO" id="iC4-Dc-bnx">
-                                        <rect key="frame" x="0.0" y="483.5" width="343" height="119.5"/>
+                                        <rect key="frame" x="0.0" y="569" width="343" height="34"/>
                                     </imageView>
                                 </subviews>
                                 <variation key="heightClass=compact" axis="horizontal" distribution="fillEqually"/>
@@ -390,25 +369,28 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmX-Gj-AmP">
-                                    <rect key="frame" x="28" y="16" width="41" height="33"/>
+                                    <rect key="frame" x="311" y="24" width="41" height="33"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                     <state key="normal" title="+Edit"/>
                                     <connections>
                                         <action selector="toggleEditMode:" destination="bUe-xp-bNB" eventType="touchUpInside" id="ijz-Py-msF"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-1g-ipM">
-                                    <rect key="frame" x="267" y="19" width="46" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-1g-ipM">
+                                    <rect key="frame" x="18" y="19" width="30" height="30"/>
+                                    <state key="normal" title="&lt;"/>
+                                    <connections>
+                                        <segue destination="BYZ-38-t0r" kind="show" id="btR-fV-miw"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstItem="ZmX-Gj-AmP" firstAttribute="top" secondItem="3uU-0q-qWG" secondAttribute="top" constant="16" id="Sox-Qm-57M"/>
-                                <constraint firstItem="ZmX-Gj-AmP" firstAttribute="leading" secondItem="3uU-0q-qWG" secondAttribute="leading" constant="28" id="Z0r-oC-Bug"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZmX-Gj-AmP" secondAttribute="trailing" id="cKp-YK-fXc"/>
+                                <constraint firstAttribute="trailing" secondItem="ZmX-Gj-AmP" secondAttribute="trailing" constant="23" id="9QU-tt-0XX"/>
+                                <constraint firstItem="EUD-1g-ipM" firstAttribute="bottom" secondItem="3uU-0q-qWG" secondAttribute="bottomMargin" id="VC0-Xo-Vr1"/>
+                                <constraint firstAttribute="bottom" secondItem="ZmX-Gj-AmP" secondAttribute="bottom" id="fFl-zW-eRu"/>
+                                <constraint firstItem="EUD-1g-ipM" firstAttribute="leading" secondItem="3uU-0q-qWG" secondAttribute="leading" constant="18" id="h0c-9L-WJ3"/>
                             </constraints>
                             <connections>
                                 <outletCollection property="gestureRecognizers" destination="Yx7-9t-onB" appends="YES" id="EUo-YR-80E"/>
@@ -469,11 +451,7 @@
                     <tabBarItem key="tabBarItem" title="table" image="table" selectedImage="table" id="uMV-Ae-hid"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztx-0Q-pKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Yx7-9t-onB">
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="iR9-o3-sDP"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Yx7-9t-onB"/>
             </objects>
             <point key="canvasLocation" x="2918" y="677"/>
         </scene>
@@ -483,7 +461,6 @@
         <image name="table" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zPV-Ax-eKH"/>
         <segue reference="jZ8-8d-N5h"/>
     </inferredMetricsTieBreakers>
 </document>

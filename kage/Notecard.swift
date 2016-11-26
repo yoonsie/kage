@@ -15,10 +15,12 @@ class Notecard: NSObject, NSCoding {
     var japaneseWord: String
     var imageID: String
     
+    
     //keys for the saved properties
     let nativeWordKey = "nativeWordKey"
     let japaneseWordKey = "japaneseWordKey"
     let imageIDKey = "imageIDKey"
+    
     
     // MARK: - Constructor
     override init() {
@@ -32,9 +34,11 @@ class Notecard: NSObject, NSCoding {
         imageID = NSUUID().uuidString
     }
     
+ 
+    
+    
     
     // MARK: - Functions
-    
     // decodes (deserializes) a caption
     required init(coder aDecoder: NSCoder) {
         nativeWord = aDecoder.decodeObject(forKey: nativeWordKey) as! String
@@ -42,11 +46,12 @@ class Notecard: NSObject, NSCoding {
         imageID = aDecoder.decodeObject(forKey: imageIDKey) as! String
     }
     
+    
     // encodes (serializes) a caption
     func encode(with aCoder: NSCoder) {
         aCoder.encode(nativeWord, forKey: nativeWordKey)
         aCoder.encode(japaneseWord, forKey: japaneseWordKey)
-         aCoder.encode(imageID, forKey: imageIDKey)
+        aCoder.encode(imageID, forKey: imageIDKey)
     }
     
     

@@ -33,4 +33,6 @@ class KanjiHelper: NSObject {
     
     
     
+    
+    
 }

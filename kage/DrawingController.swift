@@ -30,6 +30,11 @@ class DrawingController: UIViewController {
     //model
     let model = KanjiHelper()
     
+    //counter for timer
+    var counter = 3
+    
+    
+    
     
     // - MARK: Methods
     
@@ -42,7 +47,30 @@ class DrawingController: UIViewController {
         kanjiLabel.text = kanji[0]//value at first part of array is the kanji character
         kanjiStrokesLabel.text = NSLocalizedString("# of strokes: ", comment: "# of strokes: ") + kanji[1]
     
+        var _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+
+    }
+    
+    func updateCounter() {
+        //you code, this is an example
+        if counter > 0 {
+            
+            timer.text = "Timer: " + String(counter)
+            
+            print("\(counter) seconds")
+            
+            //decrement counter
+            counter -= 1
+            
+        }
         
+        if counter == 0 {
+            counter = 3//reset counter
+            timer.text = "Timer: " + String(counter)//update timer label
+            
+            //update kanji
+            getNextKanji()
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -120,15 +148,22 @@ class DrawingController: UIViewController {
 //        //reset drawing board
 //        self.canvas.image = nil
 //        
-//        //reset/update number of user's trokes
+//        //reset/update number of user's strokes
 //        numberOfStrokes = 0
 //        
 //        //update label user's number of strokes
 //        yourStrokesLabel.text = NSLocalizedString("Your # of strokes: 0", comment: "Your # of strokes: 0")
-//        
 //    }
     
+    
+    
+    
     @IBAction func nextKanji(_ sender: AnyObject) {
+        getNextKanji()
+        
+    }
+    
+    func getNextKanji() {
         self.canvas.image = nil//reset
         
         //reset number of user's strokes counter
@@ -150,8 +185,7 @@ class DrawingController: UIViewController {
             //update the actual number of strokes for new kanji
             kanjiStrokesLabel.text = NSLocalizedString("# of strokes: ", comment: "# of strokes: ") + kanji[1]
         }
-        
-        
+
     }
     
     

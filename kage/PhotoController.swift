@@ -10,8 +10,10 @@ import UIKit
 
 class PhotoController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    
     @IBOutlet var nativeLabel: UILabel!
     @IBOutlet var nativeTextField: UITextField!
+    
     
     @IBOutlet var japaneseLabel: UILabel!
     @IBOutlet var japaneseTextField: UITextField!
@@ -19,6 +21,11 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
     
     @IBOutlet var imageView: UIImageView!
     
+    //make new word to be added to the word table to be studied
+    var newWord = Word("", "", "")
+    
+    
+    let wordsModel = WordManager()
     
     
     //notecard that is saved
@@ -42,9 +49,9 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
             //give control over to picker
             present(picker, animated: true, completion: nil)
             
-            
         }
-            
+        
+        
         //no camera, disable this camera take photo button
         else {
             cameraButton?.isUserInteractionEnabled = false
@@ -79,44 +86,54 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
     // MARK: - image picker delegate methods
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        
         //save photo that was picked by user
         let photo = info[UIImagePickerControllerOriginalImage] as! UIImage
-        
         
         //store this photograph
         ImageHelper.saveImage(photo, forUID: notecard.imageID)
         
-        
         //set the outlet's image imageView to the one selected
         imageView.image = photo
+        
+//        var file_name = NSURL(fileURLWithPath: path_to_file).lastPathComponent!
+//        let imageFileName = (string as NSString).lastPathComponent
+//        print (imageFileName)
+        
         
         //return controller to view controller
         dismiss(animated: true, completion: nil)
         
     }
     
+    
+    
     //updates the saved notecard using the text entered into the textfield
     @IBAction func updateNativeWordInNotecard(nativeTextField: UITextField) {
         
         //if the native text field input has changed
         if let nativeInput = nativeTextField.text {
-        
             notecard.nativeWord = nativeInput
+            newWord.native = nativeInput//update native word to be added to the table
         }
+        
+        
+        
     }
+    
     
     //updates japanese word in the saved notecard
     @IBAction func updateJapaneseWordInNotecard(japaneseTextField: UITextField) {
+        
         //if japanese text field input has changed
         if let japaneseInput = japaneseTextField.text {
-            
             notecard.japaneseWord = japaneseInput
+            
+            newWord.japanese = japaneseInput//update word to be added to table
         }
     }
 
     
-
+    
     //dismiss keyboard for both text fields
     @IBAction func dismissKeyboard(_ sender: AnyObject) {
         nativeTextField.resignFirstResponder()
@@ -125,8 +142,6 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
     
     
     // MARK: - Lifecycle functions
-    
-    
     
     //view did load
     override func viewDidLoad() {
@@ -137,7 +152,7 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
             //let image view's image equal the saved image
             imageView.image = img
         }
-            
+        
         //update textfield text to the saved words in the notecard
         nativeTextField.text = notecard.nativeWord
         japaneseTextField.text = notecard.japaneseWord
@@ -145,9 +160,20 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
         //add clear "X" button to textfields
         nativeTextField.clearButtonMode = UITextFieldViewMode.whileEditing
         japaneseTextField.clearButtonMode = UITextFieldViewMode.whileEditing
-
         
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        print("will disappaer")
+        
+        if newWord.japanese.isEmpty == false && newWord.native.isEmpty == false && newWord.imageFile.isEmpty == false {
+            wordsModel.addWord(newWord)
+        }
+    }
+    
+    
     
     //memory warning
     override func didReceiveMemoryWarning() {
