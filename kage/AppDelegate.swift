@@ -22,7 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let photoController = window!.rootViewController as! PhotoController //reference to view controller
+        let navigationController = window?.rootViewController as! UINavigationController
+        
+        let photoController = navigationController.viewControllers[0] as! PhotoController//reference to view controller
         
         photoController.notecard = notecard//set notecard of view controller to the one last stored
         

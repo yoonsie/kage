@@ -14,6 +14,7 @@
 		8E42422E1DE62E1F00BC0CEF /* Notecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42422D1DE62E1F00BC0CEF /* Notecard.swift */; };
 		8E4242301DE6312900BC0CEF /* NotecardPersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42422F1DE6312900BC0CEF /* NotecardPersister.swift */; };
 		8E4242321DE635CA00BC0CEF /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4242311DE635CA00BC0CEF /* ImageHelper.swift */; };
+		8E426F421DED169100753BBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E426F441DED169100753BBE /* Localizable.strings */; };
 		8E8EB81A1DE5342700F3FE42 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EB8191DE5342700F3FE42 /* PhotoController.swift */; };
 		8E92B00A1DE1374B00A610EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0091DE1374B00A610EC /* AppDelegate.swift */; };
 		8E92B00C1DE1374B00A610EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B00B1DE1374B00A610EC /* ViewController.swift */; };
@@ -25,7 +26,6 @@
 		8E92B0381DE13D4300A610EC /* DrawingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0371DE13D4300A610EC /* DrawingController.swift */; };
 		8E92B03A1DE1425200A610EC /* KanjiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0391DE1425200A610EC /* KanjiHelper.swift */; };
 		8E92B03C1DE1427C00A610EC /* KanjiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B03B1DE1427C00A610EC /* KanjiCharacter.swift */; };
-		8EE505461DED0CDA00D6CA56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE505481DED0CDA00D6CA56 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,9 @@
 		8E42422D1DE62E1F00BC0CEF /* Notecard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notecard.swift; sourceTree = "<group>"; };
 		8E42422F1DE6312900BC0CEF /* NotecardPersister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotecardPersister.swift; sourceTree = "<group>"; };
 		8E4242311DE635CA00BC0CEF /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		8E426F431DED169100753BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8E426F451DED169200753BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8E426F461DED169300753BBE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8E8EB8191DE5342700F3FE42 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		8E92B0061DE1374B00A610EC /* kage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E92B0091DE1374B00A610EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +76,6 @@
 		8EE5053F1DED08A500D6CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8EE505421DED096900D6CA56 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		8EE505431DED096900D6CA56 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8EE505471DED0CDA00D6CA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8EE505491DED0CDE00D6CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8EE5054A1DED0CDE00D6CA56 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		8E92AFFD1DE1374A00A610EC = {
 			isa = PBXGroup;
 			children = (
-				8EE505481DED0CDA00D6CA56 /* Localizable.strings */,
+				8E426F441DED169100753BBE /* Localizable.strings */,
 				8E92B0081DE1374B00A610EC /* kage */,
 				8E92B01D1DE1374B00A610EC /* kageTests */,
 				8E92B0281DE1374B00A610EC /* kageUITests */,
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E92B0141DE1374B00A610EC /* LaunchScreen.storyboard in Resources */,
-				8EE505461DED0CDA00D6CA56 /* Localizable.strings in Resources */,
+				8E426F421DED169100753BBE /* Localizable.strings in Resources */,
 				8E92B0111DE1374B00A610EC /* Assets.xcassets in Resources */,
 				8E92B00F1DE1374B00A610EC /* Main.storyboard in Resources */,
 			);
@@ -350,6 +350,17 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8E426F441DED169100753BBE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E426F431DED169100753BBE /* Base */,
+				8E426F451DED169200753BBE /* en */,
+				8E426F461DED169300753BBE /* fr */,
+			);
+			name = Localizable.strings;
+			path = kage;
+			sourceTree = "<group>";
+		};
 		8E92B00D1DE1374B00A610EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,17 +378,6 @@
 				8EE505431DED096900D6CA56 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		8EE505481DED0CDA00D6CA56 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EE505471DED0CDA00D6CA56 /* Base */,
-				8EE505491DED0CDE00D6CA56 /* en */,
-				8EE5054A1DED0CDE00D6CA56 /* fr */,
-			);
-			name = Localizable.strings;
-			path = kage;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

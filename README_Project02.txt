@@ -19,7 +19,7 @@ _____________________________________
 Information
 
 Requirements:
-a. A launch screen, a custom launcher icon, localization of all user-facing strings.b. At least one navigation controller that manages segues between multiple viewcontrollers.c. You must implement persistence including:	i. Model data: any information entered by the user or stored as part of the model should be saved across application restarts.	ii. You must allow users to choose an image from the camera roll and save it.	iii. You must allow the users to use the camera to take a photo and save it.d. Your user interface should make significant use of stack views, both horizontal andvertical, whenever appropriate.
+a. A launch screen, a custom launcher icon, localization of all user-facing strings.b. At least one navigation controller that manages segues between multiple viewcontrollers.c. You must implement persistence including:	i. Model data: String information saved as data	ii. You must allow users to choose an image from the camera roll and save it.	iii. You must allow the users to use the camera to take a photo and save it.d. Use of stack views, both horizontal and vertical, whenever appropriate.
 
 
 
@@ -28,7 +28,7 @@ Instructions:
 
 1. Swipe left to move from first view to next view
 2. Press “Play” or “Study” button
-3. If you press “Study” you can press “<“ button to go back and play, if you play the game, however, you cannot go back to study
+3. If you press “Study” you can press “< Back“ button to go back
 4. Draw Kanji within 4 seconds. Press “next” if you finish early
 _________________
 
@@ -36,9 +36,11 @@ _________________
 Additions to previous Project (#2):
 
 - All views are stack views and orientation will not cause issues
+- PhotoViewController.swift and ViewController have horizontal and vertical stack views
 - Added more user-facing strings and localized them 
 - Timer added to DrawingViewController.swift: User must complete each Kanji within 4 seconds or it will move on to the next one, if they have extra time, they can press the “next” button
--Added swipe gesture to first screen
+- Added left swipe gesture to first screen
+- Added UINavigationController and segues so users can go back and forth
 
 -PhotoController.swift : View Controller that allows the user to take a photo with a camera or pick a photo from their library, and write an English word and Japanese translation they want to memorize. This information is saved using:
 	: AppDelegate.swift
@@ -81,8 +83,12 @@ WordTableViewController.swift - Controller
    - Initially the words are already added for the user
 
 
+_____________________________________
+Future plans:
 
-
+- Possibly allow user to add their own “study material” that is saved/persists
+- Possibly add bluetooth capabilities so users can play against other users. I’m not sure how to test this, can this only be done with Simulator + plugged in iPhone or can I use two borrowed MacBooks and test them against each other if I don’t have an iPhone?
+- Possibly incorporate Google Translate API 
 
 
 _____________________________________
