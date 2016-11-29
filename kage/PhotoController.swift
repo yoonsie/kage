@@ -11,24 +11,29 @@ import UIKit
 class PhotoController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     
-    @IBOutlet var nativeLabel: UILabel!
-    @IBOutlet var nativeTextField: UITextField!
+    // - MARK: Outlets
+    @IBOutlet var nativeLabel: UILabel! //label with native language
+    @IBOutlet var nativeTextField: UITextField! //textfield where user enters term for native word
     
     
-    @IBOutlet var japaneseLabel: UILabel!
-    @IBOutlet var japaneseTextField: UITextField!
+    @IBOutlet var japaneseLabel: UILabel! //label saying "Japanese"
+    @IBOutlet var japaneseTextField: UITextField!//textfield user can type in japanese translation of native word
     
     
+    //image that user chooses
     @IBOutlet var imageView: UIImageView!
+    
+
     
     //make new word to be added to the word table to be studied
     var newWord = Word("", "", "")
     
     
-    let wordsModel = WordManager()
+    var wordsModel: WordManager!
+ 
     
+    //notecard that is saved information (the native word, japanese translation and iamge)
     
-    //notecard that is saved
     var notecard: Notecard!
     
     // MARK: - methods
@@ -42,7 +47,7 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
         //if the device has a camera let the user take a photo
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             picker.sourceType = .camera//source type is camera
-            print ("Camera selected")
+            
             
             picker.delegate = self //set the delegate of the picker to view controller
             
@@ -56,7 +61,7 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
         else {
             cameraButton?.isUserInteractionEnabled = false
             cameraButton?.isEnabled = false
-            print("You do not have a camera so camera button is disabled")
+//            print("You do not have a camera so camera button is disabled")
         }
         
     }
@@ -72,7 +77,7 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
         //if the device has a photo library
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             picker.sourceType = .photoLibrary//make source type for picker the library
-            print("Photo library selected")//print statement
+            
             
             picker.delegate = self //set the delegate of the picker to view controller
             
@@ -94,10 +99,8 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
         
         //set the outlet's image imageView to the one selected
         imageView.image = photo
-        
-//        var file_name = NSURL(fileURLWithPath: path_to_file).lastPathComponent!
-//        let imageFileName = (string as NSString).lastPathComponent
-//        print (imageFileName)
+
+      
         
         
         //return controller to view controller
@@ -161,17 +164,14 @@ class PhotoController: UIViewController, UINavigationControllerDelegate, UIImage
         nativeTextField.clearButtonMode = UITextFieldViewMode.whileEditing
         japaneseTextField.clearButtonMode = UITextFieldViewMode.whileEditing
         
+        wordsModel = WordManager()
+  
+        
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        
-        super.viewWillDisappear(animated)
-        print("will disappaer")
-        
-        if newWord.japanese.isEmpty == false && newWord.native.isEmpty == false && newWord.imageFile.isEmpty == false {
-            wordsModel.addWord(newWord)
-        }
-    }
+
+
+
     
     
     

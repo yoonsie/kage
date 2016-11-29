@@ -31,7 +31,7 @@ class DrawingController: UIViewController {
     let model = KanjiHelper()
     
     //counter for timer
-    var counter = 3
+    var counter = 4
     
     
     
@@ -55,9 +55,9 @@ class DrawingController: UIViewController {
         //you code, this is an example
         if counter > 0 {
             
-            timer.text = "Timer: " + String(counter)
+            timer.text = NSLocalizedString("Timer: ", comment: "Timer: ") + String(counter)
             
-            print("\(counter) seconds")
+//            print("\(counter) seconds") only used for debugging purposes
             
             //decrement counter
             counter -= 1
@@ -65,8 +65,11 @@ class DrawingController: UIViewController {
         }
         
         if counter == 0 {
-            counter = 3//reset counter
-            timer.text = "Timer: " + String(counter)//update timer label
+            reset()//reset # of strokes and drawing board / canvas
+            
+            counter = 4//reset counter
+            
+            timer.text =  NSLocalizedString("Timer: ", comment: "Timer: ") + String(counter)//update timer label
             
             //update kanji
             getNextKanji()
@@ -131,8 +134,6 @@ class DrawingController: UIViewController {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !swiped {
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)//if the touch is over, (swipe == false) finish drawing at last point
-            
-            
         }
         
         numberOfStrokes += 1
@@ -143,34 +144,35 @@ class DrawingController: UIViewController {
     
     
     
-    
-//    @IBAction func reset(_ sender: AnyObject) {
-//        //reset drawing board
-//        self.canvas.image = nil
-//        
-//        //reset/update number of user's strokes
-//        numberOfStrokes = 0
-//        
-//        //update label user's number of strokes
-//        yourStrokesLabel.text = NSLocalizedString("Your # of strokes: 0", comment: "Your # of strokes: 0")
-//    }
+    //helper function that resets the board, the number of strokes, etc
+    func reset() {
+        //reset drawing board
+        self.canvas.image = nil
+        
+        //reset/update number of user's strokes
+        numberOfStrokes = 0
+        
+        //update label user's number of strokes
+        yourStrokesLabel.text = NSLocalizedString("Your # of strokes: 0", comment: "Your # of strokes: 0")
+    }
     
     
     
     
     @IBAction func nextKanji(_ sender: AnyObject) {
-        getNextKanji()
+        counter = 0
+        updateCounter()//reset timer as well when moving on to next kanji
+        //reset the canvas or drawing board
+        reset()
+        
+        getNextKanji()//get next kanji
+        
+        
         
     }
     
     func getNextKanji() {
-        self.canvas.image = nil//reset
-        
-        //reset number of user's strokes counter
-        numberOfStrokes = 0
-        //reset your number of user's strokes for label too
-        yourStrokesLabel.text = NSLocalizedString("Your # of strokes: 0", comment: "Your # of strokes: 0")
-        
+       
         
         if (model.kanjiArray.isEmpty) {
             kanjiLabel.text = " "
@@ -190,11 +192,6 @@ class DrawingController: UIViewController {
     
     
     
-    
-  
-    
-    
-
 
     
     

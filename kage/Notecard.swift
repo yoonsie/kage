@@ -25,7 +25,7 @@ class Notecard: NSObject, NSCoding {
     // MARK: - Constructor
     override init() {
         //default native word
-        nativeWord = "Enter a word to study e.g. dog"
+        nativeWord = NSLocalizedString("Enter a word to study e.g. dog", comment: "Enter a word to study e.g. dog")
         
         //default japanese word
         japaneseWord = "e.g. 犬"
@@ -33,8 +33,6 @@ class Notecard: NSObject, NSCoding {
         //default image ID
         imageID = NSUUID().uuidString
     }
-    
- 
     
     
     

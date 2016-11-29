@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  Project01
 //
-//  Created by Yoonsie Kim on 11/5/16.
+//  Created by Yoonsie Kim on 11/23/16.
 //  Copyright © 2016 Yoonsie Kim. All rights reserved.
 //
 
@@ -11,6 +11,8 @@ import UIKit
 class WordTableViewController: UITableViewController {
     
     var model: WordManager!
+    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,9 @@ class WordTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 70
         
-        //set model
-        model = WordManager();
-        
+        //set models
+        model = WordManager()
+       
         //if the model does have words to add
         if (model.words.isEmpty == false) {
             
@@ -58,9 +60,18 @@ class WordTableViewController: UITableViewController {
         //update the cell's Japanese, Native Language and picture
         cell.japaneseLabel?.text = "\(word.japanese)"
         cell.nativeLabel?.text = "\(word.native)"
-        let imageFileName = word.imageFile
-        cell.picture?.image = UIImage(named: imageFileName)
         
+        var imageFileName = ""
+        
+        //if the file name exists
+        if word.imageFile.isEmpty == false {
+            imageFileName = word.imageFile
+            cell.picture?.image = UIImage(named: imageFileName)
+
+        }
+ 
+        
+                
         // returns the cell
         return cell
     }

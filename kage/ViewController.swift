@@ -8,17 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+//view controller for kage starting screen
 
+class ViewController: UIViewController {
+    
+
+    // MARK: - lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+            }
 
 
 }

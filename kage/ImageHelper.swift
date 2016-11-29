@@ -2,7 +2,7 @@
 //  ImageHelper.swift
 //  HW09
 //
-//  Created by Yoonsie Kim on 11/23/16.
+//  Created by Yoonsie Kim on 11/25/16.
 //  Copyright © 2016 Yoonsie Kim. All rights reserved.
 //
 
@@ -25,7 +25,7 @@ class ImageHelper: NSObject {
                 
                 //if unable to save, prints statement
             catch {
-                print("could not save \(uid)")
+                print("X \(uid)")
             }
         }
     }
