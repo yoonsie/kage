@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "# your strokes: "; ObjectID = "3q6-2h-CIW"; */
+"3q6-2h-CIW.text" = "# your strokes: ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Ot-uC-x7D"; */
+"4Ot-uC-x7D.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "61m-VY-yfy"; */
+"61m-VY-yfy.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Timer: 00"; ObjectID = "6R4-q1-J3b"; */
+"6R4-q1-J3b.text" = "Timer: 00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "E46-DM-YRI"; */
+"E46-DM-YRI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "EUD-1g-ipM"; */
+"EUD-1g-ipM.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "# strokes: 00"; ObjectID = "FX8-xg-Y4n"; */
+"FX8-xg-Y4n.text" = "# strokes: 00";
+
+/* Class = "UITabBarItem"; title = "kage"; ObjectID = "Qc7-cv-lC8"; */
+"Qc7-cv-lC8.title" = "kage";
+
+/* Class = "UITextField"; placeholder = "e.g. 犬"; ObjectID = "Qvw-1k-XMq"; */
+"Qvw-1k-XMq.placeholder" = "e.g. 犬";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "R9g-VK-qnG"; */
+"R9g-VK-qnG.text" = "Label";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "TWR-EG-bz8"; */
+"TWR-EG-bz8.text" = "English";
+
+/* Class = "UIButton"; normalTitle = "Study"; ObjectID = "UNh-Ae-62X"; */
+"UNh-Ae-62X.normalTitle" = "Study";
+
+/* Class = "UITabBarItem"; title = "photo"; ObjectID = "WHa-SF-xZt"; */
+"WHa-SF-xZt.title" = "photo";
+
+/* Class = "UIButton"; normalTitle = "+Edit"; ObjectID = "ZmX-Gj-AmP"; */
+"ZmX-Gj-AmP.normalTitle" = "+Edit";
+
+/* Class = "UILabel"; text = "kage"; ObjectID = "bEz-ia-lFU"; */
+"bEz-ia-lFU.text" = "kage";
+
+/* Class = "UILabel"; text = "Japanese"; ObjectID = "etS-bl-LCI"; */
+"etS-bl-LCI.text" = "Japanese";
+
+/* Class = "UIButton"; normalTitle = "Play"; ObjectID = "hJS-eg-VLh"; */
+"hJS-eg-VLh.normalTitle" = "Play";
+
+/* Class = "UITextField"; placeholder = "Enter a word to study e.g. dog"; ObjectID = "hdF-Gv-x5i"; */
+"hdF-Gv-x5i.placeholder" = "Enter a word to study e.g. dog";
+
+/* Class = "UITabBarItem"; title = "table"; ObjectID = "uMV-Ae-hid"; */
+"uMV-Ae-hid.title" = "table";

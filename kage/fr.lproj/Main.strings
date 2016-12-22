@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; normalTitle = "chat"; ObjectID = "2NI-Nu-Smb"; */
+"2NI-Nu-Smb.normalTitle" = "tchat";
+
+/* Class = "UILabel"; text = "# your strokes: "; ObjectID = "3q6-2h-CIW"; */
+"3q6-2h-CIW.text" = "# vos coups: ";
+
+/* Class = "UITextField"; placeholder = "type here"; ObjectID = "4K7-7x-hdd"; */
+"4K7-7x-hdd.placeholder" = "écrivez ici";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Ot-uC-x7D"; */
+"4Ot-uC-x7D.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "61m-VY-yfy"; */
+"61m-VY-yfy.normalTitle" = "Prochain";
+
+/* Class = "UILabel"; text = "Timer: 00"; ObjectID = "6R4-q1-J3b"; */
+"6R4-q1-J3b.text" = "Minuteur: 00";
+
+/* Class = "UILabel"; text = "kage"; ObjectID = "8px-Ev-QOB"; */
+"8px-Ev-QOB.text" = "kage";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "DSs-a7-dgm"; */
+"DSs-a7-dgm.normalTitle" = "Envoyez";
+
+/* Class = "UILabel"; text = "# strokes: 00"; ObjectID = "FX8-xg-Y4n"; */
+"FX8-xg-Y4n.text" = "# coups: 00";
+
+/* Class = "UITextField"; placeholder = "url"; ObjectID = "MJT-6c-i48"; */
+"MJT-6c-i48.placeholder" = "url";
+
+/* Class = "UIButton"; normalTitle = "play"; ObjectID = "ewF-Na-UlZ"; */
+"ewF-Na-UlZ.normalTitle" = "jouez";
+
+/* Class = "UIButton"; normalTitle = "photo"; ObjectID = "jXx-mI-87p"; */
+"jXx-mI-87p.normalTitle" = "photo";
+
+/* Class = "UIButton"; normalTitle = "Display"; ObjectID = "uNf-0h-JR0"; */
+"uNf-0h-JR0.normalTitle" = "Affichez";
+
+/* Class = "UIButton"; normalTitle = "Browse"; ObjectID = "vH9-zb-TDU"; */
+"vH9-zb-TDU.normalTitle" = "Feuilletez";

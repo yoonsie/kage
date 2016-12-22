@@ -1,0 +1,6 @@
+framework module Pods_kage {
+  umbrella header "Pods-kage-umbrella.h"
+
+  export *
+  module * { export * }
+}

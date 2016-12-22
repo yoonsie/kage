@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Project01.xcscheme</key>
+		<key>kage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8EE073A31DCE3121006F5A3C</key>
+		<key>8E92B0051DE1374B00A610EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EE073B71DCE3121006F5A3C</key>
+		<key>8E92B0191DE1374B00A610EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EE073C21DCE3121006F5A3C</key>
+		<key>8E92B0241DE1374B00A610EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

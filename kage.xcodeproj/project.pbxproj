@@ -7,275 +7,337 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E17DB0E1DCE6C1A002C906E /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */; };
-		8E17DB101DCE6C27002C906E /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */; };
-		8E17DB121DCE866C002C906E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB111DCE866C002C906E /* Word.swift */; };
-		8E17DB141DCE87C3002C906E /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB131DCE87C3002C906E /* WordCell.swift */; };
-		8E17DB161DCE8842002C906E /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17DB151DCE8842002C906E /* WordManager.swift */; };
-		8E67C5F91DCFD8F300672C7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E67C5FB1DCFD8F300672C7A /* Localizable.strings */; };
-		8ED988891DCEEECC00EFCAA4 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */; };
-		8ED9888B1DCF006A00EFCAA4 /* KanjiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */; };
-		8ED9888D1DCF00C700EFCAA4 /* KanjiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */; };
-		8EE073A81DCE3121006F5A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE073A71DCE3121006F5A3C /* AppDelegate.swift */; };
-		8EE073AD1DCE3121006F5A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE073AB1DCE3121006F5A3C /* Main.storyboard */; };
-		8EE073AF1DCE3121006F5A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE073AE1DCE3121006F5A3C /* Assets.xcassets */; };
-		8EE073B21DCE3121006F5A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE073B01DCE3121006F5A3C /* LaunchScreen.storyboard */; };
-		8EE073BD1DCE3121006F5A3C /* Project01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE073BC1DCE3121006F5A3C /* Project01Tests.swift */; };
-		8EE073C81DCE3121006F5A3C /* Project01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE073C71DCE3121006F5A3C /* Project01UITests.swift */; };
+		80C1D6503A0EFFBC0C13919D /* Pods_kage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75F9FA50F60E63ED87BE2FE /* Pods_kage.framework */; };
+		8E06E11B1E03992C001FA383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E06E11A1E03992C001FA383 /* Assets.xcassets */; };
+		8E06E11F1E039D12001FA383 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E06E11E1E039D12001FA383 /* Localizable.strings */; };
+		8E42C4D31DFE06AE0063DD4E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8E42C4CB1DFE06AE0063DD4E /* LICENSE */; };
+		8E4650001E0096D300756F24 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E464FFF1E0096D300756F24 /* ChatController.swift */; };
+		8E89057D1E020221005ABD29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89057C1E020221005ABD29 /* HomeViewController.swift */; };
+		8E91B63A1DFE1580002D8F85 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91B6391DFE1580002D8F85 /* ImageFetcher.swift */; };
+		8E91B63C1DFE159D002D8F85 /* ImageBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91B63B1DFE159D002D8F85 /* ImageBrowserViewController.swift */; };
+		8E92B00A1DE1374B00A610EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0091DE1374B00A610EC /* AppDelegate.swift */; };
+		8E92B00F1DE1374B00A610EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E92B00D1DE1374B00A610EC /* Main.storyboard */; };
+		8E92B0141DE1374B00A610EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E92B0121DE1374B00A610EC /* LaunchScreen.storyboard */; };
+		8E92B01F1DE1374B00A610EC /* kageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B01E1DE1374B00A610EC /* kageTests.swift */; };
+		8E92B02A1DE1374B00A610EC /* kageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0291DE1374B00A610EC /* kageUITests.swift */; };
+		8E92B0381DE13D4300A610EC /* DrawingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0371DE13D4300A610EC /* DrawingController.swift */; };
+		8E92B03A1DE1425200A610EC /* KanjiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B0391DE1425200A610EC /* KanjiHelper.swift */; };
+		8E92B03C1DE1427C00A610EC /* KanjiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B03B1DE1427C00A610EC /* KanjiCharacter.swift */; };
+		C5C291D6B6DAA12FA55E717D /* Pods_kageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B8C81FED3130569F659CAD /* Pods_kageTests.framework */; };
+		CDF4CBC7B9FC44700824290F /* Pods_kageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF1B7BD5640301D6CB35DB8 /* Pods_kageUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8EE073B91DCE3121006F5A3C /* PBXContainerItemProxy */ = {
+		8E92B01B1DE1374B00A610EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8EE0739C1DCE3121006F5A3C /* Project object */;
+			containerPortal = 8E92AFFE1DE1374A00A610EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8EE073A31DCE3121006F5A3C;
-			remoteInfo = Project01;
+			remoteGlobalIDString = 8E92B0051DE1374B00A610EC;
+			remoteInfo = kage;
 		};
-		8EE073C41DCE3121006F5A3C /* PBXContainerItemProxy */ = {
+		8E92B0261DE1374B00A610EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8EE0739C1DCE3121006F5A3C /* Project object */;
+			containerPortal = 8E92AFFE1DE1374A00A610EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8EE073A31DCE3121006F5A3C;
-			remoteInfo = Project01;
+			remoteGlobalIDString = 8E92B0051DE1374B00A610EC;
+			remoteInfo = kage;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8E42C4C61DFE04ED0063DD4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
-		8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
-		8E17DB111DCE866C002C906E /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		8E17DB131DCE87C3002C906E /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
-		8E17DB151DCE8842002C906E /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
-		8E67C5F51DCFD4CA00672C7A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
-		8E67C5F61DCFD4CA00672C7A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8E67C5FA1DCFD8F300672C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8E67C5FC1DCFD8F400672C7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8E67C5FD1DCFD8F500672C7A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
-		8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiCharacter.swift; sourceTree = "<group>"; };
-		8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiHelper.swift; sourceTree = "<group>"; };
-		8EE073A41DCE3121006F5A3C /* kage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kage.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE073A71DCE3121006F5A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EE073AC1DCE3121006F5A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EE073AE1DCE3121006F5A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8EE073B11DCE3121006F5A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8EE073B31DCE3121006F5A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EE073B81DCE3121006F5A3C /* kageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE073BC1DCE3121006F5A3C /* Project01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project01Tests.swift; sourceTree = "<group>"; };
-		8EE073BE1DCE3121006F5A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EE073C31DCE3121006F5A3C /* kageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE073C71DCE3121006F5A3C /* Project01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project01UITests.swift; sourceTree = "<group>"; };
-		8EE073C91DCE3121006F5A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B8C81FED3130569F659CAD /* Pods_kageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F05E4A950D1C37EFD54C4F3 /* Pods-kageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kageUITests/Pods-kageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BFEC331D97A31A058B0B798 /* Pods-kage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kage.release.xcconfig"; path = "Pods/Target Support Files/Pods-kage/Pods-kage.release.xcconfig"; sourceTree = "<group>"; };
+		62C65F80B9BA06466C3488E4 /* Pods-kage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kage/Pods-kage.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF1B7BD5640301D6CB35DB8 /* Pods_kageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4E576FDDD86C7039A3DCF2 /* Pods-kageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kageUITests/Pods-kageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E06E11A1E03992C001FA383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../kage 2/kage/Assets.xcassets"; sourceTree = "<group>"; };
+		8E06E11C1E039A2B001FA383 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		8E06E11D1E039A2B001FA383 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8E06E11E1E039D12001FA383 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = kage/Localizable.strings; sourceTree = "<group>"; };
+		8E42C4CB1DFE06AE0063DD4E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "../../../Downloads/PeerKit-master/LICENSE"; sourceTree = "<group>"; };
+		8E464FFF1E0096D300756F24 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		8E89057C1E020221005ABD29 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E91B6391DFE1580002D8F85 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		8E91B63B1DFE159D002D8F85 /* ImageBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowserViewController.swift; sourceTree = "<group>"; };
+		8E92B0061DE1374B00A610EC /* kage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E92B0091DE1374B00A610EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E92B00E1DE1374B00A610EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E92B0131DE1374B00A610EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E92B0151DE1374B00A610EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E92B01A1DE1374B00A610EC /* kageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E92B01E1DE1374B00A610EC /* kageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kageTests.swift; sourceTree = "<group>"; };
+		8E92B0201DE1374B00A610EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E92B0251DE1374B00A610EC /* kageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E92B0291DE1374B00A610EC /* kageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kageUITests.swift; sourceTree = "<group>"; };
+		8E92B02B1DE1374B00A610EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E92B0371DE13D4300A610EC /* DrawingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingController.swift; sourceTree = "<group>"; };
+		8E92B0391DE1425200A610EC /* KanjiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiHelper.swift; sourceTree = "<group>"; };
+		8E92B03B1DE1427C00A610EC /* KanjiCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiCharacter.swift; sourceTree = "<group>"; };
+		8EE5053F1DED08A500D6CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9193B0350C9E4858C08488E3 /* Pods-kageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kageTests/Pods-kageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C75F9FA50F60E63ED87BE2FE /* Pods_kage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7603D0C4E557993FB2D298 /* Pods-kageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kageTests/Pods-kageTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8EE073A11DCE3121006F5A3C /* Frameworks */ = {
+		8E92B0031DE1374B00A610EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C1D6503A0EFFBC0C13919D /* Pods_kage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE073B51DCE3121006F5A3C /* Frameworks */ = {
+		8E92B0171DE1374B00A610EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C291D6B6DAA12FA55E717D /* Pods_kageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE073C01DCE3121006F5A3C /* Frameworks */ = {
+		8E92B0221DE1374B00A610EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF4CBC7B9FC44700824290F /* Pods_kageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8EE0739B1DCE3121006F5A3C = {
+		0254256E5AA03AA6298DD40E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8E67C5FB1DCFD8F300672C7A /* Localizable.strings */,
-				8EE073A61DCE3121006F5A3C /* Project01 */,
-				8EE073BB1DCE3121006F5A3C /* Project01Tests */,
-				8EE073C61DCE3121006F5A3C /* Project01UITests */,
-				8EE073A51DCE3121006F5A3C /* Products */,
+				62C65F80B9BA06466C3488E4 /* Pods-kage.debug.xcconfig */,
+				5BFEC331D97A31A058B0B798 /* Pods-kage.release.xcconfig */,
+				9193B0350C9E4858C08488E3 /* Pods-kageTests.debug.xcconfig */,
+				EE7603D0C4E557993FB2D298 /* Pods-kageTests.release.xcconfig */,
+				1F05E4A950D1C37EFD54C4F3 /* Pods-kageUITests.debug.xcconfig */,
+				7B4E576FDDD86C7039A3DCF2 /* Pods-kageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E92AFFD1DE1374A00A610EC = {
+			isa = PBXGroup;
+			children = (
+				8E06E11E1E039D12001FA383 /* Localizable.strings */,
+				8E42C4CB1DFE06AE0063DD4E /* LICENSE */,
+				8E92B0081DE1374B00A610EC /* kage */,
+				8E92B01D1DE1374B00A610EC /* kageTests */,
+				8E92B0281DE1374B00A610EC /* kageUITests */,
+				8E92B0071DE1374B00A610EC /* Products */,
+				0254256E5AA03AA6298DD40E /* Pods */,
+				9D8FB26DEB6D030A74260D0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		8EE073A51DCE3121006F5A3C /* Products */ = {
+		8E92B0071DE1374B00A610EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EE073A41DCE3121006F5A3C /* kage.app */,
-				8EE073B81DCE3121006F5A3C /* kageTests.xctest */,
-				8EE073C31DCE3121006F5A3C /* kageUITests.xctest */,
+				8E92B0061DE1374B00A610EC /* kage.app */,
+				8E92B01A1DE1374B00A610EC /* kageTests.xctest */,
+				8E92B0251DE1374B00A610EC /* kageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EE073A61DCE3121006F5A3C /* Project01 */ = {
+		8E92B0081DE1374B00A610EC /* kage */ = {
 			isa = PBXGroup;
 			children = (
-				8E17DB0D1DCE6C1A002C906E /* AnimationsViewController.swift */,
-				8E17DB111DCE866C002C906E /* Word.swift */,
-				8E17DB151DCE8842002C906E /* WordManager.swift */,
-				8E17DB0F1DCE6C27002C906E /* WordTableViewController.swift */,
-				8ED9888A1DCF006A00EFCAA4 /* KanjiCharacter.swift */,
-				8ED9888C1DCF00C700EFCAA4 /* KanjiHelper.swift */,
-				8ED988881DCEEECC00EFCAA4 /* DrawingViewController.swift */,
-				8EE073A71DCE3121006F5A3C /* AppDelegate.swift */,
-				8EE073AB1DCE3121006F5A3C /* Main.storyboard */,
-				8E17DB131DCE87C3002C906E /* WordCell.swift */,
-				8EE073AE1DCE3121006F5A3C /* Assets.xcassets */,
-				8EE073B01DCE3121006F5A3C /* LaunchScreen.storyboard */,
-				8EE073B31DCE3121006F5A3C /* Info.plist */,
+				8E92B00D1DE1374B00A610EC /* Main.storyboard */,
+				8E06E11A1E03992C001FA383 /* Assets.xcassets */,
+				8E92B0091DE1374B00A610EC /* AppDelegate.swift */,
+				8E89057C1E020221005ABD29 /* HomeViewController.swift */,
+				8E92B0371DE13D4300A610EC /* DrawingController.swift */,
+				8E92B03B1DE1427C00A610EC /* KanjiCharacter.swift */,
+				8E92B0391DE1425200A610EC /* KanjiHelper.swift */,
+				8E464FFF1E0096D300756F24 /* ChatController.swift */,
+				8E91B6391DFE1580002D8F85 /* ImageFetcher.swift */,
+				8E91B63B1DFE159D002D8F85 /* ImageBrowserViewController.swift */,
+				8E92B0121DE1374B00A610EC /* LaunchScreen.storyboard */,
+				8E92B0151DE1374B00A610EC /* Info.plist */,
 			);
-			path = Project01;
+			path = kage;
 			sourceTree = "<group>";
 		};
-		8EE073BB1DCE3121006F5A3C /* Project01Tests */ = {
+		8E92B01D1DE1374B00A610EC /* kageTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EE073BC1DCE3121006F5A3C /* Project01Tests.swift */,
-				8EE073BE1DCE3121006F5A3C /* Info.plist */,
+				8E92B01E1DE1374B00A610EC /* kageTests.swift */,
+				8E92B0201DE1374B00A610EC /* Info.plist */,
 			);
-			path = Project01Tests;
+			path = kageTests;
 			sourceTree = "<group>";
 		};
-		8EE073C61DCE3121006F5A3C /* Project01UITests */ = {
+		8E92B0281DE1374B00A610EC /* kageUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8EE073C71DCE3121006F5A3C /* Project01UITests.swift */,
-				8EE073C91DCE3121006F5A3C /* Info.plist */,
+				8E92B0291DE1374B00A610EC /* kageUITests.swift */,
+				8E92B02B1DE1374B00A610EC /* Info.plist */,
 			);
-			path = Project01UITests;
+			path = kageUITests;
+			sourceTree = "<group>";
+		};
+		9D8FB26DEB6D030A74260D0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75F9FA50F60E63ED87BE2FE /* Pods_kage.framework */,
+				07B8C81FED3130569F659CAD /* Pods_kageTests.framework */,
+				6EF1B7BD5640301D6CB35DB8 /* Pods_kageUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EE073A31DCE3121006F5A3C /* kage */ = {
+		8E92B0051DE1374B00A610EC /* kage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EE073CC1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kage" */;
+			buildConfigurationList = 8E92B02E1DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kage" */;
 			buildPhases = (
-				8EE073A01DCE3121006F5A3C /* Sources */,
-				8EE073A11DCE3121006F5A3C /* Frameworks */,
-				8EE073A21DCE3121006F5A3C /* Resources */,
+				58129E0BA3FF5BC41E9FB504 /* [CP] Check Pods Manifest.lock */,
+				8E92B0021DE1374B00A610EC /* Sources */,
+				8E92B0031DE1374B00A610EC /* Frameworks */,
+				8E92B0041DE1374B00A610EC /* Resources */,
+				8E42C4C61DFE04ED0063DD4E /* Embed Frameworks */,
+				9DE8A14D3558B31E2E90C801 /* [CP] Embed Pods Frameworks */,
+				5A56EF086C9A095790E7A891 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = kage;
-			productName = Project01;
-			productReference = 8EE073A41DCE3121006F5A3C /* kage.app */;
+			productName = kage;
+			productReference = 8E92B0061DE1374B00A610EC /* kage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8EE073B71DCE3121006F5A3C /* kageTests */ = {
+		8E92B0191DE1374B00A610EC /* kageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageTests" */;
+			buildConfigurationList = 8E92B0311DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kageTests" */;
 			buildPhases = (
-				8EE073B41DCE3121006F5A3C /* Sources */,
-				8EE073B51DCE3121006F5A3C /* Frameworks */,
-				8EE073B61DCE3121006F5A3C /* Resources */,
+				87199B05E1ADCD80B550214F /* [CP] Check Pods Manifest.lock */,
+				8E92B0161DE1374B00A610EC /* Sources */,
+				8E92B0171DE1374B00A610EC /* Frameworks */,
+				8E92B0181DE1374B00A610EC /* Resources */,
+				03B01DCC1BCA858F4EB96532 /* [CP] Embed Pods Frameworks */,
+				5D0B720C96AA55DFDF4D1F28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8EE073BA1DCE3121006F5A3C /* PBXTargetDependency */,
+				8E92B01C1DE1374B00A610EC /* PBXTargetDependency */,
 			);
 			name = kageTests;
-			productName = Project01Tests;
-			productReference = 8EE073B81DCE3121006F5A3C /* kageTests.xctest */;
+			productName = kageTests;
+			productReference = 8E92B01A1DE1374B00A610EC /* kageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8EE073C21DCE3121006F5A3C /* kageUITests */ = {
+		8E92B0241DE1374B00A610EC /* kageUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageUITests" */;
+			buildConfigurationList = 8E92B0341DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kageUITests" */;
 			buildPhases = (
-				8EE073BF1DCE3121006F5A3C /* Sources */,
-				8EE073C01DCE3121006F5A3C /* Frameworks */,
-				8EE073C11DCE3121006F5A3C /* Resources */,
+				44E1997F9816145EB313504F /* [CP] Check Pods Manifest.lock */,
+				8E92B0211DE1374B00A610EC /* Sources */,
+				8E92B0221DE1374B00A610EC /* Frameworks */,
+				8E92B0231DE1374B00A610EC /* Resources */,
+				F232E1E7BEB2A04F7D4E825F /* [CP] Embed Pods Frameworks */,
+				581C2DE8B8751EF634F1D5A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8EE073C51DCE3121006F5A3C /* PBXTargetDependency */,
+				8E92B0271DE1374B00A610EC /* PBXTargetDependency */,
 			);
 			name = kageUITests;
-			productName = Project01UITests;
-			productReference = 8EE073C31DCE3121006F5A3C /* kageUITests.xctest */;
+			productName = kageUITests;
+			productReference = 8E92B0251DE1374B00A610EC /* kageUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8EE0739C1DCE3121006F5A3C /* Project object */ = {
+		8E92AFFE1DE1374A00A610EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yoonsie Kim";
 				TargetAttributes = {
-					8EE073A31DCE3121006F5A3C = {
+					8E92B0051DE1374B00A610EC = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
-					8EE073B71DCE3121006F5A3C = {
+					8E92B0191DE1374B00A610EC = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 8EE073A31DCE3121006F5A3C;
+						TestTargetID = 8E92B0051DE1374B00A610EC;
 					};
-					8EE073C21DCE3121006F5A3C = {
+					8E92B0241DE1374B00A610EC = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 8EE073A31DCE3121006F5A3C;
+						TestTargetID = 8E92B0051DE1374B00A610EC;
 					};
 				};
 			};
-			buildConfigurationList = 8EE0739F1DCE3121006F5A3C /* Build configuration list for PBXProject "kage" */;
+			buildConfigurationList = 8E92B0011DE1374A00A610EC /* Build configuration list for PBXProject "kage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				fr,
 			);
-			mainGroup = 8EE0739B1DCE3121006F5A3C;
-			productRefGroup = 8EE073A51DCE3121006F5A3C /* Products */;
+			mainGroup = 8E92AFFD1DE1374A00A610EC;
+			productRefGroup = 8E92B0071DE1374B00A610EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EE073A31DCE3121006F5A3C /* kage */,
-				8EE073B71DCE3121006F5A3C /* kageTests */,
-				8EE073C21DCE3121006F5A3C /* kageUITests */,
+				8E92B0051DE1374B00A610EC /* kage */,
+				8E92B0191DE1374B00A610EC /* kageTests */,
+				8E92B0241DE1374B00A610EC /* kageUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8EE073A21DCE3121006F5A3C /* Resources */ = {
+		8E92B0041DE1374B00A610EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE073B21DCE3121006F5A3C /* LaunchScreen.storyboard in Resources */,
-				8E67C5F91DCFD8F300672C7A /* Localizable.strings in Resources */,
-				8EE073AF1DCE3121006F5A3C /* Assets.xcassets in Resources */,
-				8EE073AD1DCE3121006F5A3C /* Main.storyboard in Resources */,
+				8E06E11F1E039D12001FA383 /* Localizable.strings in Resources */,
+				8E92B0141DE1374B00A610EC /* LaunchScreen.storyboard in Resources */,
+				8E92B00F1DE1374B00A610EC /* Main.storyboard in Resources */,
+				8E06E11B1E03992C001FA383 /* Assets.xcassets in Resources */,
+				8E42C4D31DFE06AE0063DD4E /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE073B61DCE3121006F5A3C /* Resources */ = {
+		8E92B0181DE1374B00A610EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE073C11DCE3121006F5A3C /* Resources */ = {
+		8E92B0231DE1374B00A610EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,80 +346,207 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03B01DCC1BCA858F4EB96532 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kageTests/Pods-kageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44E1997F9816145EB313504F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58129E0BA3FF5BC41E9FB504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		581C2DE8B8751EF634F1D5A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kageUITests/Pods-kageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A56EF086C9A095790E7A891 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kage/Pods-kage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0B720C96AA55DFDF4D1F28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kageTests/Pods-kageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87199B05E1ADCD80B550214F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE8A14D3558B31E2E90C801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kage/Pods-kage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F232E1E7BEB2A04F7D4E825F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kageUITests/Pods-kageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8EE073A01DCE3121006F5A3C /* Sources */ = {
+		8E92B0021DE1374B00A610EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E17DB121DCE866C002C906E /* Word.swift in Sources */,
-				8ED9888B1DCF006A00EFCAA4 /* KanjiCharacter.swift in Sources */,
-				8E17DB0E1DCE6C1A002C906E /* AnimationsViewController.swift in Sources */,
-				8ED9888D1DCF00C700EFCAA4 /* KanjiHelper.swift in Sources */,
-				8E17DB141DCE87C3002C906E /* WordCell.swift in Sources */,
-				8ED988891DCEEECC00EFCAA4 /* DrawingViewController.swift in Sources */,
-				8EE073A81DCE3121006F5A3C /* AppDelegate.swift in Sources */,
-				8E17DB161DCE8842002C906E /* WordManager.swift in Sources */,
-				8E17DB101DCE6C27002C906E /* WordTableViewController.swift in Sources */,
+				8E92B0381DE13D4300A610EC /* DrawingController.swift in Sources */,
+				8E91B63C1DFE159D002D8F85 /* ImageBrowserViewController.swift in Sources */,
+				8E92B03A1DE1425200A610EC /* KanjiHelper.swift in Sources */,
+				8E4650001E0096D300756F24 /* ChatController.swift in Sources */,
+				8E92B03C1DE1427C00A610EC /* KanjiCharacter.swift in Sources */,
+				8E91B63A1DFE1580002D8F85 /* ImageFetcher.swift in Sources */,
+				8E92B00A1DE1374B00A610EC /* AppDelegate.swift in Sources */,
+				8E89057D1E020221005ABD29 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE073B41DCE3121006F5A3C /* Sources */ = {
+		8E92B0161DE1374B00A610EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE073BD1DCE3121006F5A3C /* Project01Tests.swift in Sources */,
+				8E92B01F1DE1374B00A610EC /* kageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE073BF1DCE3121006F5A3C /* Sources */ = {
+		8E92B0211DE1374B00A610EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE073C81DCE3121006F5A3C /* Project01UITests.swift in Sources */,
+				8E92B02A1DE1374B00A610EC /* kageUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8EE073BA1DCE3121006F5A3C /* PBXTargetDependency */ = {
+		8E92B01C1DE1374B00A610EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8EE073A31DCE3121006F5A3C /* kage */;
-			targetProxy = 8EE073B91DCE3121006F5A3C /* PBXContainerItemProxy */;
+			target = 8E92B0051DE1374B00A610EC /* kage */;
+			targetProxy = 8E92B01B1DE1374B00A610EC /* PBXContainerItemProxy */;
 		};
-		8EE073C51DCE3121006F5A3C /* PBXTargetDependency */ = {
+		8E92B0271DE1374B00A610EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8EE073A31DCE3121006F5A3C /* kage */;
-			targetProxy = 8EE073C41DCE3121006F5A3C /* PBXContainerItemProxy */;
+			target = 8E92B0051DE1374B00A610EC /* kage */;
+			targetProxy = 8E92B0261DE1374B00A610EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E67C5FB1DCFD8F300672C7A /* Localizable.strings */ = {
+		8E92B00D1DE1374B00A610EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8E67C5FA1DCFD8F300672C7A /* Base */,
-				8E67C5FC1DCFD8F400672C7A /* en */,
-				8E67C5FD1DCFD8F500672C7A /* fr */,
-			);
-			name = Localizable.strings;
-			path = Project01;
-			sourceTree = "<group>";
-		};
-		8EE073AB1DCE3121006F5A3C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EE073AC1DCE3121006F5A3C /* Base */,
-				8E67C5F51DCFD4CA00672C7A /* fr */,
+				8E92B00E1DE1374B00A610EC /* Base */,
+				8EE5053F1DED08A500D6CA56 /* en */,
+				8E06E11C1E039A2B001FA383 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8EE073B01DCE3121006F5A3C /* LaunchScreen.storyboard */ = {
+		8E92B0121DE1374B00A610EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8EE073B11DCE3121006F5A3C /* Base */,
-				8E67C5F61DCFD4CA00672C7A /* fr */,
+				8E92B0131DE1374B00A610EC /* Base */,
+				8E06E11D1E039A2B001FA383 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -365,7 +554,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8EE073CA1DCE3121006F5A3C /* Debug */ = {
+		8E92B02C1DE1374B00A610EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,6 +573,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -406,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -416,7 +606,7 @@
 			};
 			name = Debug;
 		};
-		8EE073CB1DCE3121006F5A3C /* Release */ = {
+		8E92B02D1DE1374B00A610EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -435,6 +625,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -451,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -460,124 +651,130 @@
 			};
 			name = Release;
 		};
-		8EE073CD1DCE3121006F5A3C /* Debug */ = {
+		8E92B02F1DE1374B00A610EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C65F80B9BA06466C3488E4 /* Pods-kage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Project01/Info.plist;
+				INFOPLIST_FILE = kage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01;
+				PRODUCT_BUNDLE_IDENTIFIER = CSC214.kage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		8EE073CE1DCE3121006F5A3C /* Release */ = {
+		8E92B0301DE1374B00A610EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFEC331D97A31A058B0B798 /* Pods-kage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Project01/Info.plist;
+				INFOPLIST_FILE = kage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01;
+				PRODUCT_BUNDLE_IDENTIFIER = CSC214.kage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		8EE073D01DCE3121006F5A3C /* Debug */ = {
+		8E92B0321DE1374B00A610EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9193B0350C9E4858C08488E3 /* Pods-kageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Project01Tests/Info.plist;
+				INFOPLIST_FILE = kageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = CSC214.kageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kage.app/kage";
 			};
 			name = Debug;
 		};
-		8EE073D11DCE3121006F5A3C /* Release */ = {
+		8E92B0331DE1374B00A610EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7603D0C4E557993FB2D298 /* Pods-kageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Project01Tests/Info.plist;
+				INFOPLIST_FILE = kageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = CSC214.kageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kage.app/kage";
 			};
 			name = Release;
 		};
-		8EE073D31DCE3121006F5A3C /* Debug */ = {
+		8E92B0351DE1374B00A610EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F05E4A950D1C37EFD54C4F3 /* Pods-kageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = Project01UITests/Info.plist;
+				INFOPLIST_FILE = kageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = CSC214.kageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Project01;
+				TEST_TARGET_NAME = kage;
 			};
 			name = Debug;
 		};
-		8EE073D41DCE3121006F5A3C /* Release */ = {
+		8E92B0361DE1374B00A610EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4E576FDDD86C7039A3DCF2 /* Pods-kageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = Project01UITests/Info.plist;
+				INFOPLIST_FILE = kageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSC214.Project01UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = CSC214.kageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Project01;
+				TEST_TARGET_NAME = kage;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8EE0739F1DCE3121006F5A3C /* Build configuration list for PBXProject "kage" */ = {
+		8E92B0011DE1374A00A610EC /* Build configuration list for PBXProject "kage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EE073CA1DCE3121006F5A3C /* Debug */,
-				8EE073CB1DCE3121006F5A3C /* Release */,
+				8E92B02C1DE1374B00A610EC /* Debug */,
+				8E92B02D1DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EE073CC1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kage" */ = {
+		8E92B02E1DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EE073CD1DCE3121006F5A3C /* Debug */,
-				8EE073CE1DCE3121006F5A3C /* Release */,
+				8E92B02F1DE1374B00A610EC /* Debug */,
+				8E92B0301DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EE073CF1DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageTests" */ = {
+		8E92B0311DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EE073D01DCE3121006F5A3C /* Debug */,
-				8EE073D11DCE3121006F5A3C /* Release */,
+				8E92B0321DE1374B00A610EC /* Debug */,
+				8E92B0331DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EE073D21DCE3121006F5A3C /* Build configuration list for PBXNativeTarget "kageUITests" */ = {
+		8E92B0341DE1374B00A610EC /* Build configuration list for PBXNativeTarget "kageUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EE073D31DCE3121006F5A3C /* Debug */,
-				8EE073D41DCE3121006F5A3C /* Release */,
+				8E92B0351DE1374B00A610EC /* Debug */,
+				8E92B0361DE1374B00A610EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8EE0739C1DCE3121006F5A3C /* Project object */;
+	rootObject = 8E92AFFE1DE1374A00A610EC /* Project object */;
 }
